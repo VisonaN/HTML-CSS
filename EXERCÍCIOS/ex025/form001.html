@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulário!</h1>
-    <form action="cadastro.php"> <!-- se quiser desligar o autopreenchimento <form autocomplete="off"> -->
+    <form action="cadastro.php" method="post"> <!-- se quiser desligar o autopreenchimento <form autocomplete="off"> -->
         <p><label for="inome">Nome:</label> 
             <input type="text" name="Nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
@@ -21,3 +21,8 @@
     </form>
 </body>
 </html>
+
+<!-- Existem dois métodos na HTML para envio de formulário = Get (o primeiro método, o padrão e o dado fica na URL, usar o GET quando os dados solicitados não forem sensíveise quando você quer que a URL seja compartilhável e usar o GET quando seus dados são até 3kb e não usar o GET quando for envio de arquivos) 
+e POST (o post tem uma maior segurança só pelo fato de não deixar os dados na URL mas tem como acessálo no menu inspecionar no navegador, usar o POST quando for enviar dados sensíveis, usar o POST se seus dados passarem de 3kb e se quiser enviar arquivos)
+Aprender HTTPS para proteção de dados
+-->
